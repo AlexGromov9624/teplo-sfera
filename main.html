@@ -10,12 +10,9 @@
 
     <link rel="icon" href="img/favicon.ico">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <!--[endif]-->
+    <link href="Slider/css/smslider.css" rel="stylesheet"/>
 
     <title>Тепло-Сфера. Утепленное строительство домов. Напыление ППУ. Заливка ППУ.</title>
 </head>
@@ -24,13 +21,36 @@
 
 <header>
     <div class="block-panel-info">
-
+        <div class="wrapper">
+            <div class="logo col-md-4">логотип</div>
+            <div class="contact col-md-4">о нас</div>
+            <div class="phone col-md-4">телефоны</div>
+        </div>
     </div>
+
     <div class="block-slider">
-
+        <div id="sm_slider">
+            <ul>
+                <li><img src="img/slider_1.jpg"></li>
+                <li><img src="img/slider_2.jpg"></li>
+                <li><img src="img/slider_3.jpg"></li>
+            </ul>
+        </div>
     </div>
-    <div class="block-menu">
 
+    <div id="menu" class="block-menu default">
+        <div class="wrapper">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Полезно знать</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -68,5 +88,13 @@
     </div>
 </footer>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/fix_menu.js"></script>
+<script type="text/javascript" src="Slider/jquery.smslider.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#sm_slider').smSlider()
+    })
+</script>
 </body>
 </html>
