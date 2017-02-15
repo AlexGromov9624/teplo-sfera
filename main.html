@@ -21,19 +21,66 @@
 <header>
     <div class="block-panel-info">
         <div class="wrapper">
-            <div class="logo col-md-4">логотип</div>
-            <div class="contact col-md-4">о нас</div>
-            <div class="phone col-md-4">телефоны</div>
+            <div class="col-md-4">
+                <div class="logo">
+                    <h2 class="shadow big-letters">тепло-сфера</h2>
+                    <p>ваш дом станет сферой тепла</p>
+                </div>
+            </div>
+            <div class="call-back col-md-4">
+                <div class="form-decoration">
+                    <form class="application" action="application.php" method="POST" name=" application ">
+                        <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                        <button class="applicationButton" type="submit">Перезвонить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="phone col-md-4">
+                <div class="col-md-2 sign">
+                    <img src="img/phone.svg">
+                </div>
+                <div class="col-md-5 tel">
+                    <p><span>(067)</span> 947 90 71</p>
+                    <p><span>(050)</span> 991 79 50</p>
+                </div>
+                <div class="col-md-5 tel">
+                    <p><span>(056)</span> 767 54 89</p>
+                    <p><span>(073)</span> 472 25 18</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="block-slider">
-        <div id="sm_slider">
-            <ul>
-                <li><img src="img/slider_1.jpg"></li>
-                <!--<li><img src="img/slider_2.jpg"></li>-->
-                <!--<li><img src="img/slider_3.jpg"></li>-->
-            </ul>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/slider_1.jpg" alt="slider1">
+                    <div class="carousel-caption">
+                        <h3>ППУ удерживает тепло внутри помещения на 100%</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slider_1.jpg" alt="slider2">
+                    <div class="carousel-caption">
+                        <h3>Сократите затраты на обогрев в 2 раза</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slider_1.jpg" alt="slider3">
+                    <div class="carousel-caption">
+                        <h3>100% гидроизоляция плоских крыш</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
     </div>
 
@@ -61,7 +108,7 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Напыление ППУ</h2></div>
                     <div class="short_block_cat">
                         <p>Напыление любой поверхности</p>
                         <span>Подробнее…</span>
@@ -75,7 +122,7 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Напыление ППУ</h2></div>
                     <div class="short_block_cat">
                         <p>Напыление любой поверхности</p>
                         <span>Подробнее…</span>
@@ -89,7 +136,7 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Напыление ППУ</h2></div>
                     <div class="short_block_cat">
                         <p>Напыление любой поверхности</p>
                         <span>Подробнее…</span>
@@ -105,7 +152,7 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Напыление ППУ</h2></div>
                     <div class="short_block_cat">
                         <p>Напыление любой поверхности</p>
                         <span>Подробнее…</span>
@@ -119,10 +166,10 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Заливка ППУ</h2></div>
                     <div class="short_block_cat">
                         <p>Напыление любой поверхности</p>
-                        <span>Подробнее…</span>
+                       <span>Подробнее…</span>
                     </div>
                 </a>
             </div>
@@ -133,9 +180,9 @@
                     <div class="image">
                         <img src="img/007n.jpg" alt="">
                     </div>
-                    <div class="title_cat">Напыление ППУ</div>
+                    <div class="title_cat"><h2>Строительство с приминением ППУ</h2></div>
                     <div class="short_block_cat">
-                        <p>Напыление любой поверхности</p>
+                        <p>Вам нужно построить теплый и красивый дом?</p>
                         <span>Подробнее…</span>
                     </div>
                 </a>
@@ -144,30 +191,35 @@
     </div>
 </div>
 
-<div id="block-static" class="wrapper">
-    <h2>Статистика</h2>
-    <div class="text_progress col-md-4">
-        Здесь нужно описать, почему люди должны предпочитать ППУ. Чем она выделилась среди других веществ. Текст должен состовлять Мак 5 предложений.
-    </div>
-    <div class="progress_bar col-md-8">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                80% Пенополиуретан
-            </div>
+<div id="block-static">
+    <div class="wrapper">
+        <h2>Статистика</h2>
+        <div class="text_progress col-md-4">
+            <p>Здесь нужно описать, почему люди должны предпочитать ППУ. Чем она выделилась среди других веществ. Текст должен состовлять Мак 5 предложений.</p>
+            <p>Здесь нужно описать, почему люди должны предпочитать ППУ. Чем она выделилась среди других веществ. Текст должен состовлять Мак 5 предложений.</p>
+            <p>Здесь нужно описать, почему люди должны предпочитать ППУ. Чем она выделилась среди других веществ. Текст должен состовлять Мак 5 предложений.</p>
+
         </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                20% Минеральная вата
+        <div class="progress_bar col-md-8">
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                    80% Пенополиуретан
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                60% Полистерол
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    20% Минвата
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                70% Полиизол
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                    60% Полистерол
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                    70% Полиизол
+                </div>
             </div>
         </div>
     </div>
@@ -177,13 +229,14 @@
     <!--<h2>Видео</h2>-->
 <!--</div>-->
 
-<div id="article" class="wrapper">
-    <h2>Интересно знать</h2>
-    <div style="height: 100%;">
+<div id="article">
+    <div class="line"><h2>Интересно знать?</h2></div>
+    <div class="wrapper">
+        <div style="height: 100%;">
         <div id="ta" style="overflow:hidden;">
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
@@ -208,7 +261,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">О тротуарной плитке ТМ МАЛЬТА®</p>
@@ -233,7 +286,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Преимущества цокольного камня ТМ Мальта®</p>
@@ -258,7 +311,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Укладка тротуарной плитки</p>
@@ -283,7 +336,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
@@ -308,7 +361,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
@@ -333,7 +386,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
@@ -358,7 +411,7 @@
             </div>
             <div class="col-lg-3 col-md-3 marg-block-info">
                 <div>
-                    <img src="img/good1.jpg">
+                    <img src="img/007n.jpg">
                 </div>
                 <div class="block-info">
                     <p class="title-info">Вибролитье или полусухое вибропрессование?</p>
@@ -384,21 +437,21 @@
         </div>
         <p><a class="btn btn-primary btn-lg read-next" role="button" href="#">узнать больше</a></p>
     </div>
+    </div>
+    <div class="line"></div>
 </div>
 
 <div id="about">
     <div class="wrapper">
-        <div class="block-partner">
-            <h2>Немного текста про нас и наше преймущество</h2>
-            <p>Основа деятельности компании «Мальта» – это развитие и ориентация на потребителей.</p>
-            <p>Наше предприятие располагает новым и прогрессивным оборудованием, большими производственными площадями,
-                командой высококвалифицированных специалистов в области производства стройматериалов.</p>
-            <p>Также, мы имеем возможность, изготавливать продукцию на заказ индивидуально под запрос клиента.</p>
-            <p>Наша особенность – это качественная продукция, отвечающая всем требованиям наших клиентов.</p>
-            <p>Стремясь к расширению сетей сбыта продукции компания «Мальта»
-                приглашает к сотрудничеству всех заинтересованных организаций и компаний.</p>
-            <p>Будем рады сотрудничать!</p>
-        </div>
+        <h2>Немного текста про нас и наше преймущество</h2>
+        <p>Основа деятельности компании «Мальта» – это развитие и ориентация на потребителей.</p>
+        <p>Наше предприятие располагает новым и прогрессивным оборудованием, большими производственными площадями,
+            командой высококвалифицированных специалистов в области производства стройматериалов.</p>
+        <p>Также, мы имеем возможность, изготавливать продукцию на заказ индивидуально под запрос клиента.</p>
+        <p>Наша особенность – это качественная продукция, отвечающая всем требованиям наших клиентов.</p>
+        <p>Стремясь к расширению сетей сбыта продукции компания «Мальта»
+            приглашает к сотрудничеству всех заинтересованных организаций и компаний.</p>
+        <p>Будем рады сотрудничать!</p>
     </div>
 </div>
 
@@ -429,7 +482,7 @@
         <div id="order" class="col-md-6">
             <h2>Контактная форма</h2>
             <div class="form-decoration">
-                <form class="application" action="../malta/application.php" method="POST" name=" application ">
+                <form class="application" action="application.php" method="POST" name=" application ">
                     <input name="name" class="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
                     <input name="email" type="email" class="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required />
                     <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>

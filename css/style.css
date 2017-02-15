@@ -3,11 +3,10 @@
     padding: 0;
 }
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: one;
-    font-weight: normal;
     background-color: #fff;
-    color: #000;
+    color: #333;
     padding: 0 !important;
 }
 @font-face {
@@ -43,6 +42,9 @@ a {
 .center {
     text-align: center;
 }
+.shadow {
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+}
 
 /*fix menu*/
 #menu {
@@ -74,7 +76,7 @@ a {
     position: relative;
     z-index: 1000;
     height: 60px;
-    margin-top: -66px;
+    margin-top: -60px;
 }
 #menu.fixed {
     z-index: 1000;
@@ -89,21 +91,62 @@ a {
 /*fix menu*/
 
 .block-panel-info {
-    text-transform: uppercase;
     text-align: center;
     width: 100%;
     height: 90px;
     background: #fff; /* Для старых браузров */
     background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
-    padding-top: 20px;
+    padding: 15px 0;
 }
+    .block-panel-info .phone img {
+        width: 35px;
+        vertical-align: text-top;
+    }
+    .block-panel-info .phone .tel {
+        text-align: left;
+        color: #434343;
+        font: 15px "Open sans", sans-serif;
+    }
+    .block-panel-info .phone .tel p {
+        margin-bottom: 9px;
+        font-weight: 700;
+    }
+    .block-panel-info .phone .tel span {
+        font-weight: 100;
+        font-size: 12px;
+    }
+    .block-panel-info .phone .sign {
+        text-align: right;
+        padding-right: 0;
+    }
+    .call-back .applicationButton {
+        width: 100px;
+        font-size: 13px;
+        padding: 5px 0;
+        border: none;
+        background-color: #fe7e18;
+        color: #fff;
+    }
+    .call-back .applicationButton:hover {
+        background-color: #fff;
+        color: #fe7e18;
+    }
+    .call-back .applicationTelephone {
+        width: 170px;
+        margin-bottom: 3px;
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+    /*.logo, .phone {*/
+        /*padding: 15px 0;*/
+    /*}*/
 #category {
-    margin: 3% 0;
+    margin: 15% 0 12%;
 }
     #category .item_cat {
-        width: 300px;
+        width: 315px;
         position: relative;
-        height: 300px;
+        height: 335px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -123,7 +166,7 @@ a {
     }
     #category .item_cat .title_cat {
         background-color: rgba(254, 126, 24, 0.61);
-        width: 300px;
+        width: 315px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -143,7 +186,7 @@ a {
         bottom: 0;
         min-height: 108px;
         padding: 14px;
-        width: 300px;
+        width: 315px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -221,9 +264,88 @@ a {
     color: #fe7e18;
 }
 /*------кнопка вверх на главную-------*/
+#block-static{
+    margin-bottom: 10%;
+    width: 100%;
+    height: 470px;
+    padding: 6% 1%;
+    background: url(../img/diagram.jpg) no-repeat fixed;
+    background-size: cover;
+
+}
+    #block-static h2, #article h2 {
+        font-weight: 700;
+    }
+    #block-static .progress {
+        width: 500px;
+        height: 30px;
+    }
+    .progress_bar {
+        padding-left: 100px;
+    }
+    .progress-bar {
+        line-height: 30px;
+        color: #fff;
+    }
 .pad-phone {
     padding-left: 76px;
 }
-.block-slider img {
+.carousel-inner {
     box-shadow: 0 0 20px #333;
+}
+.carousel-caption {
+    bottom: 130px;
+    background-color: rgba(254, 126, 24, 0.62);
+    width: 600px;
+    height: auto;
+}
+.logo {
+    background-color: rgb(254, 126, 24);
+    width: 250px;
+    height: auto;
+    padding: 3px 0;
+}
+#article h2 {
+    padding-left: 10%;
+}
+    .line {
+        width: 100%;
+        height: 40px;
+        padding-top: 0.5%;
+        background-color: rgb(254, 126, 24);
+    }
+    #ta {
+
+    }
+/*------кнопка узнать больше-------*/
+#ta{
+    padding: 5% 0;
+    height: 380px;
+    transition:all 1s;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+}
+.read-next, .read-next:focus  {
+    color: #ec4b3b;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 7px 5px;
+    font-size: 17px;
+    border: 2px solid #fff;
+}
+.read-next:hover {
+    color: #fff;
+    background-color: #ec4b3b;
+}
+/*------кнопка узнать больше-------*/
+#about {
+    padding: 6% 0;
+    text-align: center;
+}
+    #about h2 {
+        padding-bottom: 1%;
+    }
+@media screen and (min-width: 768px) {
+
 }
