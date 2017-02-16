@@ -130,6 +130,8 @@ a {
     .call-back .applicationButton:hover {
         background-color: #fff;
         color: #fe7e18;
+        font-weight: 700;
+        border: 1px solid #fe7e18;
     }
     .call-back .applicationTelephone {
         width: 170px;
@@ -159,14 +161,14 @@ a {
         box-sizing: border-box;
         width: 100%;
     }
-    #category .item_cat .title_cat {
-        font-size: 18px;
-        font-weight: normal;
-        color: white;
+    #category .item_cat .title_cat h2 {
+        color: #fff;
     }
     #category .item_cat .title_cat {
-        background-color: rgba(254, 126, 24, 0.61);
+        background-color: rgba(238, 238, 238, 0.57);
         width: 315px;
+        font-size: 18px;
+        font-weight: normal;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -178,10 +180,11 @@ a {
         top: 0;
         left: 0;
     }
+
     #category .short_block_cat {
-        background-color: rgba(254, 126, 24, 0.61);
+        background-color: rgba(238, 238, 238, 0.57);
         font-size: 14px;
-        color: white;
+        color: #fe7e18;
         position: absolute;
         bottom: 0;
         min-height: 108px;
@@ -264,7 +267,7 @@ a {
     color: #fe7e18;
 }
 /*------кнопка вверх на главную-------*/
-#block-static{
+#static{
     margin-bottom: 10%;
     width: 100%;
     height: 470px;
@@ -273,22 +276,26 @@ a {
     background-size: cover;
 
 }
-    #block-static h2, #article h2 {
+    #static h2, #article h2 {
         font-weight: 700;
     }
-    #block-static .progress {
-        width: 500px;
+    #static .progress {
+        width: 80%;
         height: 30px;
     }
-    .progress_bar {
+    #static .progress_bar {
         padding-left: 100px;
     }
-    .progress-bar {
+    #static .progress-bar {
         line-height: 30px;
         color: #fff;
     }
+    #static .text_progress {
+        background-color: rgba(255, 255, 255, 0.61);
+        padding: 5px 15px 15px;
+    }
 .pad-phone {
-    padding-left: 76px;
+    padding-left: 67px;
 }
 .carousel-inner {
     box-shadow: 0 0 20px #333;
@@ -314,30 +321,27 @@ a {
         padding-top: 0.5%;
         background-color: rgb(254, 126, 24);
     }
-    #ta {
-
-    }
 /*------кнопка узнать больше-------*/
-#ta{
-    padding: 5% 0;
-    height: 380px;
-    transition:all 1s;
-    -moz-transition:all 1s;
-    -webkit-transition:all 1s;
-    -o-transition:all 1s;
+.ta{
+    padding: 5% 0 0;
+    min-height: 485px;
+    /*transition:all 1s;*/
+    /*-moz-transition:all 1s;*/
+    /*-webkit-transition:all 1s;*/
+    /*-o-transition:all 1s;*/
 }
-.read-next, .read-next:focus  {
-    color: #ec4b3b;
-    background-color: #fff;
-    border-radius: 0;
-    padding: 7px 5px;
-    font-size: 17px;
-    border: 2px solid #fff;
-}
-.read-next:hover {
-    color: #fff;
-    background-color: #ec4b3b;
-}
+/*.read-next, .read-next:focus  {*/
+    /*color: #ec4b3b;*/
+    /*background-color: #fff;*/
+    /*border-radius: 0;*/
+    /*padding: 7px 5px;*/
+    /*font-size: 17px;*/
+    /*border: 2px solid #fff;*/
+/*}*/
+/*.read-next:hover {*/
+    /*color: #fff;*/
+    /*background-color: #ec4b3b;*/
+/*}*/
 /*------кнопка узнать больше-------*/
 #about {
     padding: 6% 0;
@@ -346,6 +350,60 @@ a {
     #about h2 {
         padding-bottom: 1%;
     }
+#article .item_art {
+    width: 200px;
+    position: relative;
+    height: 200px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+    #article .item_art img {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #article .block-info {
+        width: 200px;
+    }
+    #article .block-info .title-art {
+        color: #fe7e18;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 14px;
+    }
+    #article .block-info .text-art {
+        color: #000;
+        font-size: 12px;
+        line-height: 13px;
+        letter-spacing: 0.2px;
+        margin-bottom: 15px;
+    }
+    #article .block-info .link-art {
+        color: #fff;
+        font-size: 14px;
+        background-color: #fe7e18;
+        border: 1px solid #fe7e18;
+        width: 110px;
+        padding: 4px 3px;
+    }
+    #article .block-info .link-art a {
+        text-decoration: none;
+        color: #fff;
+        }
+    #article .block-info .link-art:hover {
+        color: #fe7e18;
+        background-color: #fff;
+    }
+    #article .block-info .link-art a:hover {
+        color: #fe7e18;
+        font-weight: 700;
+    }
+
 @media screen and (min-width: 768px) {
 
 }

@@ -15,7 +15,96 @@
 
     <title>Тепло-Сфера. Утепленное строительство домов. Напыление ППУ. Заливка ППУ.</title>
 </head>
+
 <body>
-<h1>Цены</h1>
+
+<header>
+    <div class="block-panel-info">
+        <div class="wrapper">
+            <div class="col-md-4">
+                <div class="logo">
+                    <h2 class="shadow big-letters">тепло-сфера</h2>
+                    <p>ваш дом станет сферой тепла</p>
+                </div>
+            </div>
+            <div class="call-back col-md-4">
+                <div class="form-decoration">
+                    <form class="application" action="application.php" method="POST" name=" application ">
+                        <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                        <button class="applicationButton" type="submit">перезвонить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="phone col-md-4">
+                <div class="col-md-2 sign">
+                    <img src="img/phone.svg">
+                </div>
+                <div class="col-md-5 tel">
+                    <p><span>(067)</span> 947 90 71</p>
+                    <p><span>(050)</span> 991 79 50</p>
+                </div>
+                <div class="col-md-5 tel">
+                    <p><span>(056)</span> 767 54 89</p>
+                    <p><span>(073)</span> 472 25 18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="block-menu default center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <!--<li><a href="reviews.html">Отзывы</a></li>-->
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="articles.html">Полезно знать</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<footer id="contact" class="wrapper">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Наши контакты</h2>
+            <div class="form-contact">
+                <p>Адрес: <span>Украина, Днепр ул.Филосовская,84</span></p>
+                <p>Почта: <span>teplosffera@gmail.com</span></p>
+                <p>Рабочее время: <span>пн-вс 9:00-18:00</span></p>
+                <p>Телефон: <span>067 778 16 95</span></p>
+                <p class="pad-phone">067 778 16 95</p>
+                <p class="pad-phone">067 778 16 95</p>
+                <p class="pad-phone">067 778 16 95</p>
+            </div>
+            <div class="row soc-contact">
+                <a href="#"><img src="img/vk.svg"></a>
+                <a href="#"><img src="img/fb.svg"></a>
+                <a href="#"><img src="img/goo.svg"></a>
+                <a href="#"><img src="img/tw.svg"></a>
+                <a href="#"><img src="img/od.svg"></a>
+            </div>
+        </div>
+        <div id="order" class="col-md-6">
+            <h2>Контактная форма</h2>
+            <div class="form-decoration">
+                <form class="application" action="application.php" method="POST" name=" application ">
+                    <input name="name" class="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+                    <input name="email" type="email" class="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required />
+                    <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                    <button class="applicationButton" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/fix_menu.js"></script>
+<script src="js/bootstrap.js"></script>
+
 </body>
 </html>
