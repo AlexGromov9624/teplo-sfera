@@ -9,7 +9,7 @@
 
 <?php 
 
-$sendto   = "officeppu@gmail.com"; // почта, на которую будет приходить письмо officeppu@gmail.com
+$sendto   = "teplosffera@gmail.com"; // почта, на которую будет приходить письмо officeppu@gmail.com
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты

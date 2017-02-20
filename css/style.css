@@ -5,7 +5,7 @@
 body {
     font-size: 14px;
     font-family: one;
-    background-color: #fff;
+    background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
     color: #333;
     padding: 0 !important;
 }
@@ -76,7 +76,7 @@ a {
     position: relative;
     z-index: 1000;
     height: 60px;
-    margin-top: -60px;
+    /*margin-top: -60px;*/
 }
 #menu.fixed {
     z-index: 1000;
@@ -182,12 +182,12 @@ a {
     }
 
     #category .short_block_cat {
-        background-color: rgba(238, 238, 238, 0.57);
+        background-color: rgba(51, 51, 51, 0.81);
         font-size: 14px;
         color: #fe7e18;
         position: absolute;
         bottom: 0;
-        min-height: 108px;
+        min-height: 288px;
         padding: 14px;
         width: 315px;
         -moz-box-sizing: border-box;
@@ -281,7 +281,8 @@ a {
     }
     #static .progress {
         width: 80%;
-        height: 30px;
+        height: 45px;
+        background: rgba(235, 233, 231, 0.74);
     }
     #static .progress_bar {
         padding-left: 100px;
@@ -293,6 +294,12 @@ a {
     #static .text_progress {
         background-color: rgba(255, 255, 255, 0.61);
         padding: 5px 15px 15px;
+    }
+    .progress-bar-warning {
+        background-color: #fe7e18;
+    }
+    .progress-bar-info {
+        background-color: #11517d;
     }
 .pad-phone {
     padding-left: 67px;

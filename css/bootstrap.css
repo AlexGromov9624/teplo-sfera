@@ -5161,12 +5161,12 @@ a.thumbnail.active {
   -webkit-background-size: 40px 40px;
           background-size: 40px 40px;
 }
-.progress.active .progress-bar,
-.progress-bar.active {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite;
-}
+/*.progress.active .progress-bar,
+.progress-bar.active {*/
+  /*-webkit-animation: progress-bar-stripes 2s linear infinite;*/
+  /*-o-animation: progress-bar-stripes 2s linear infinite;*/
+  /*animation: progress-bar-stripes 2s linear infinite;*/
+/*}*/
 .progress-bar-success {
   background-color: #5cb85c;
 }
