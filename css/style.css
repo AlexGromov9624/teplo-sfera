@@ -76,7 +76,7 @@ a {
     position: relative;
     z-index: 1000;
     height: 60px;
-    /*margin-top: -60px;*/
+    margin-top: -60px;
 }
 #menu.fixed {
     z-index: 1000;
