@@ -145,7 +145,7 @@ a {
         padding: 3px 10px;
     }
 #category {
-    margin: 15% 0 12%;
+    margin: 8% 0;
 }
     #category .item_cat {
         width: 315px;
@@ -339,6 +339,16 @@ a {
         height: 40px;
         padding-top: 0.5%;
         background-color: rgb(254, 126, 24);
+    }
+#privileges {
+    text-align: center;
+    padding-top: 5%;
+}
+    #privileges .privilege {
+        margin-bottom: 60px;
+    }
+    #privileges img {
+        width: 150px;
     }
 /*------кнопка узнать больше-------*/
 .ta{
