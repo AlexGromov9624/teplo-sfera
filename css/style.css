@@ -96,8 +96,13 @@ a {
     height: 90px;
     background: #fff; /* Для старых браузров */
     background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
-    padding: 15px 0;
 }
+    .block-panel-info .call-back, .block-panel-info .phone {
+        padding-top: 15px;
+    }
+    .block-panel-info .logo {
+        padding-top: 6px;
+    }
     .block-panel-info .phone img {
         width: 35px;
         vertical-align: text-top;
@@ -139,9 +144,6 @@ a {
         font-size: 13px;
         padding: 3px 10px;
     }
-    /*.logo, .phone {*/
-        /*padding: 15px 0;*/
-    /*}*/
 #category {
     margin: 15% 0 12%;
 }
@@ -313,12 +315,22 @@ a {
     width: 600px;
     height: auto;
 }
-.logo {
-    background-color: rgb(254, 126, 24);
-    width: 250px;
+#logo {
+    /*background-color: rgb(254, 126, 24);*/
+    width: 285px;
     height: auto;
     padding: 3px 0;
 }
+    #logo #icon{
+        display: inline-block;
+        width: 60px;
+        float: left;
+    }
+    #logo #logo-title {
+        display: inline-block;
+        margin-top: 9px;
+        float: right;
+    }
 #article h2 {
     padding-left: 10%;
 }
