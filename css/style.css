@@ -68,7 +68,7 @@ a {
     font-weight: 700;
 }
 #menu li a:hover {
-    color: #fe7e18;
+    color: #f9ba48;
     -webkit-transition-property: color;
     -webkit-transition-duration: 0.5s;
 }
@@ -99,7 +99,7 @@ a {
     /*background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);*/
 }
     .block-panel-info .call-back, .block-panel-info .phone {
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .block-panel-info .logo {
         padding-top: 6px;
@@ -146,12 +146,14 @@ a {
         padding: 3px 10px;
     }
 #category {
-    margin: 8% 0;
+    /*padding: 8% 0;*/
+    background: linear-gradient(to left, #231f20 60%, #f9ba48 40%);
+    height: 420px;
 }
     #category .item_cat {
         width: 250px;
         position: relative;
-        height: 275px;
+        height: 150px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -170,6 +172,7 @@ a {
     #category .item_cat .title_cat {
         background-color: rgba(238, 238, 238, 0.57);
         width: 100%;
+        height: 130px;
         font-size: 18px;
         font-weight: normal;
         -moz-box-sizing: border-box;
@@ -219,9 +222,15 @@ a {
         font-size: 16px;
         color: #333333;
     }
+    #category .info-block {
+
+    }
+    #category .category-block {
+        padding-top: 65px;
+    }
 
 #contact {
-    background-color: #fe7e18;
+    background-color: #231f20;
     color: #fff;
     padding-top: 5%;
     padding-bottom: 4%;
@@ -236,18 +245,19 @@ a {
     #contact .form-decoration button {
         color: #fff;
         padding: 8px;
-        background-color: #fe7e18;
+        background-color: #f9ba48;
         font-size: 18px;
         border: 2px solid #fff;
         letter-spacing: 0.5px;
     }
     #contact .form-decoration button:hover {
-        color: #fe7e18;
+        color: #f9ba48;
         background-color: #fff;
+        font-weight: 700;
     }
     .soc-contact img {
         width: 35px;
-        margin: 10px 0 0 10px;
+        margin: 10px 10px 0 0;
     }
     .soc-contact img:hover {
         opacity: 0.3;
@@ -257,7 +267,7 @@ a {
     }
 /*------кнопка вверх на главную-------*/
 #back-to-top {
-    background-color: #fe7e18;
+    background-color: #f9ba48;
     border-radius: 0;
     position: fixed;
     bottom: 20px;
@@ -266,7 +276,7 @@ a {
 }
 #back-to-top:hover {
     background-color: #fff;
-    color: #fe7e18;
+    color: #f9ba48;
 }
 /*------кнопка вверх на главную-------*/
 #static{
@@ -306,9 +316,9 @@ a {
 .pad-phone {
     padding-left: 67px;
 }
-.carousel-inner {
-    box-shadow: 0 0 20px #333;
-}
+/*.carousel-inner {*/
+    /*box-shadow: 0 0 20px #333;*/
+/*}*/
 .carousel-caption {
     bottom: 130px;
     background-color: rgba(254, 126, 24, 0.62);
@@ -339,17 +349,27 @@ a {
         width: 100%;
         height: 40px;
         padding-top: 0.5%;
-        background-color: rgb(254, 126, 24);
+        background-color: #f9ba48;
     }
 #privileges {
     text-align: center;
     padding-top: 5%;
+    background-color: #231f20;
 }
     #privileges .privilege > div {
         margin-bottom: 60px;
     }
     #privileges img {
         width: 100px;
+    }
+    #privileges .tit-priv {
+        color: #fe7e18;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #privileges .text-priv {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 10px;
     }
 /*------кнопка узнать больше-------*/
 .ta{
