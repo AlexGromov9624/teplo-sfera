@@ -21,19 +21,21 @@
 <header>
     <div class="block-panel-info">
         <div class="wrapper">
-            <div class="col-md-4">
-                <div class="logo">
-                    <h2 class="shadow big-letters">тепло-сфера</h2>
-                    <p>ваш дом станет сферой тепла</p>
+            <div class="logo col-md-4">
+                <div id="logo">
+                    <div class="icon"><img src="img/guarantee.svg"></div>
+                    <div id="logo-title"><h2 class="shadow big-letters">тепло-сфера</h2>
+                        <p>ваш дом станет сферой тепла</p>
+                    </div>
                 </div>
             </div>
             <div class="call-back col-md-4">
-                <div class="form-decoration">
-                    <form class="application" action="application.php" method="POST" name=" application ">
-                        <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
-                        <button class="applicationButton" type="submit">перезвонить</button>
-                    </form>
-                </div>
+                <!--<div class="form-decoration">-->
+                <!--<form class="application" action="application.php" method="POST" name=" application ">-->
+                <!--<input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>-->
+                <!--<button class="applicationButton" type="submit">перезвонить</button>-->
+                <!--</form>-->
+                <!--</div>-->
             </div>
             <div class="phone col-md-4">
                 <div class="col-md-2 sign">
@@ -57,21 +59,21 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="img/slider_1.jpg" alt="slider1">
-                    <div class="carousel-caption">
-                        <h3>ППУ удерживает тепло внутри помещения на 100%</h3>
-                    </div>
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>ППУ удерживает тепло внутри помещения на 100%</h3>-->
+                    <!--</div>-->
                 </div>
                 <div class="item">
                     <img src="img/slider_1.jpg" alt="slider2">
-                    <div class="carousel-caption">
-                        <h3>Сократите затраты на обогрев в 2 раза</h3>
-                    </div>
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Сократите затраты на обогрев в 2 раза</h3>-->
+                    <!--</div>-->
                 </div>
                 <div class="item">
                     <img src="img/slider_1.jpg" alt="slider3">
-                    <div class="carousel-caption">
-                        <h3>100% гидроизоляция плоских крыш</h3>
-                    </div>
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>100% гидроизоляция плоских крыш</h3>-->
+                    <!--</div>-->
                 </div>
             </div>
             <!-- Controls -->
@@ -87,6 +89,7 @@
     <div id="menu" class="block-menu default center">
         <div class="wrapper">
             <ul>
+                <!--<li><div id="icon"><img src="img/guarantee.svg"></div></li>-->
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="services.html">Услуги</a></li>
                 <li><a href="portfolio.html">Портфолио</a></li>
@@ -300,6 +303,9 @@
     </div>
 </div>
 
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left">
+    <span class="glyphicon glyphicon-chevron-up"></span></a>
+
 <footer id="contact" class="wrapper">
     <div class="row">
         <div class="col-md-6">
@@ -333,29 +339,36 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script src="js/fix_menu.js"></script>
+
 <script src="js/bootstrap.js"></script>
-<script>
-    $(function () {
-        $('#myTab a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_1 a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_2 a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_3 a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_4 a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_5 a:first').tab('show')
-    })
-    $(function () {
-        $('#myTab1_6 a:first').tab('show')
+
+<script type="text/javascript">
+    //кнопка вверх
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        $('#back-to-top').tooltip('show');
+    });
+</script>
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 2000
     })
 </script>
 
