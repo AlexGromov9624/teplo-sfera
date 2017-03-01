@@ -89,6 +89,16 @@ a {
 .transbg {
     background-color: rgba(0, 0, 0, 0.58)!important;
 }
+#icon-logo {
+    display: none;
+}
+.transbg #icon-logo {
+    width: 60px;
+    top: 4px;
+    position: absolute;
+    left: 195px;
+    display: inherit;
+}
 /*fix menu*/
 
 .block-panel-info {
@@ -435,7 +445,36 @@ a {
     text-align: justify;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.61);
 }
-
+#services {
+    min-height: 800px;
+}
+.nav > li > a {
+    padding: 17px 7px;
+    color: #FF9800;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #231f20;
+}
+#myTab1 > li, #myTab2 > li, #myTab3 > li, #myTab6 > li {
+    padding: 10px 10px 0 37px;
+}
+#myTab1, #myTab2, #myTab3, #myTab6 {
+    border-right: 1px solid #ddd;
+}
+#myTab1 > li > a, #myTab2 > li > a, #myTab3 > li > a, #myTab6 > li > a {
+    text-decoration: none;
+}
+#myTab1 > li > a:hover, #myTab2 > li > a:hover, #myTab3 > li > a:hover, #myTab6 > li > a:hover, #myTab1 > li > a:focus, #myTab2 > li > a:focus, #myTab3 > li > a:focus, #myTab6 > li > a:focus {
+    color: #FF9800;
+}
+.photo-serv {
+    width: 60%;
+    margin: 0 25px 15px 0px;
+    float: left;
+}
+.text-serv {
+    margin-top: 20px;
+}
 @media screen and (min-width: 768px) {
 
 }
