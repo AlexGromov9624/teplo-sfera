@@ -479,6 +479,24 @@ a {
     width: 4%;
     margin-right: 10px;
 }
+#price .table-responsive {
+    padding: 5% 25% 2%;
+}
+#price .table th, #price .table td:nth-child(2), #price .table td:nth-child(3) {
+    text-align: center;
+}
+#price .table td, #price .table th {
+    border: 1px solid #eeedeb;
+}
+#price .table-responsive tr:nth-child(odd) {
+    background-color: rgb(249, 186, 72);
+}
+#price .table-responsive tr:nth-child(even) {
+    background-color: rgba(249, 186, 72, 0.36);
+}
+.article-page {
+    min-height: 1100px;
+}
 @media screen and (min-width: 768px) {
 
 }
