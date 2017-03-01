@@ -21,19 +21,21 @@
 <header>
     <div class="block-panel-info">
         <div class="wrapper">
-            <div class="col-md-4">
-                <div class="logo">
-                    <h2 class="shadow big-letters">тепло-сфера</h2>
-                    <p>ваш дом станет сферой тепла</p>
+            <div class="logo col-md-4">
+                <div id="logo">
+                    <div class="icon"><img src="img/guarantee.svg"></div>
+                    <div id="logo-title"><h2 class="shadow big-letters">тепло-сфера</h2>
+                        <p>ваш дом станет сферой тепла</p>
+                    </div>
                 </div>
             </div>
             <div class="call-back col-md-4">
-                <div class="form-decoration">
-                    <form class="application" action="application.php" method="POST" name=" application ">
-                        <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
-                        <button class="applicationButton" type="submit">перезвонить</button>
-                    </form>
-                </div>
+                <!--<div class="form-decoration">-->
+                <!--<form class="application" action="application.php" method="POST" name=" application ">-->
+                <!--<input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>-->
+                <!--<button class="applicationButton" type="submit">перезвонить</button>-->
+                <!--</form>-->
+                <!--</div>-->
             </div>
             <div class="phone col-md-4">
                 <div class="col-md-2 sign">
@@ -51,9 +53,43 @@
         </div>
     </div>
 
+    <div class="block-slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/slider_1.jpg" alt="slider1">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>ППУ удерживает тепло внутри помещения на 100%</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="img/slider_1.jpg" alt="slider2">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Сократите затраты на обогрев в 2 раза</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="img/slider_1.jpg" alt="slider3">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>100% гидроизоляция плоских крыш</h3>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
     <div id="menu" class="block-menu default center">
         <div class="wrapper">
             <ul>
+                <li><div id="icon-logo"><img src="img/guarantee.svg"></div></li>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="services.html">Услуги</a></li>
                 <li><a href="portfolio.html">Портфолио</a></li>
@@ -81,54 +117,6 @@
     </div>
 </div>
 
-<div id="article">
-    <div class="line"><h2>Немного полезного</h2></div>
-    <div class="wrapper">
-        <div class="ta">
-            <div class="col-lg-3 col-md-3">
-                <div class="item_art">
-                    <img src="img/007n.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-art">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-art">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <p class="link-art"><a href="articles.html">читать дальше</a></p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="item_art">
-                    <img src="img/007n.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-art">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-art">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <p class="link-art"><a href="articles.html">читать дальше</a></p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="item_art">
-                    <img src="img/007n.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-art">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-art">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <p class="link-art"><a href="articles.html">читать дальше</a></p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="item_art">
-                    <img src="img/007n.jpg">
-                </div>
-                <div class="block-info">
-                    <p class="title-art">Вибролитье или полусухое вибропрессование?</p>
-                    <p class="text-art">Вибролитье или полусухое вибропрессование? Вибролитье или полусухое вибропрессование?</p>
-                    <p class="link-art"><a href="articles.html">читать дальше</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <footer id="contact" class="wrapper">
     <div class="row">
         <div class="col-md-6">
@@ -137,7 +125,7 @@
                 <p>Адрес: <span>Украина, Днепр ул.Филосовская,84</span></p>
                 <p>Почта: <span>teplosffera@gmail.com</span></p>
                 <p>Рабочее время: <span>пн-вс 9:00-18:00</span></p>
-                <p>Телефон: <span>067 777 77 77</span></p>         
+                <p>Телефон: <span>067 777 77 77</span></p>
             </div>
             <div class="row soc-contact">
                 <a href="#"><img src="img/vk.svg"></a>
@@ -162,8 +150,38 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script src="js/fix_menu.js"></script>
+
 <script src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+    //кнопка вверх
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        $('#back-to-top').tooltip('show');
+    });
+</script>
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
 
 </body>
 </html>

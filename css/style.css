@@ -497,6 +497,25 @@ a {
 .article-page {
     min-height: 1100px;
 }
+.article-page .art {
+    margin-bottom: 10px;
+}
+.dload-price {
+    text-align: center;
+    margin-bottom: 4%;
+}
+.dload-price > .dload > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background: #f9ba48;
+    border: 1px solid;
+}
+.dload-price > .dload > a:hover, .dload-price > .dload > a:focus {
+    color: #f9ba48;
+    background: #fff;
+    border: 1px solid;
+}
 @media screen and (min-width: 768px) {
 
 }
