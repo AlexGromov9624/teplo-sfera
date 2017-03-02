@@ -379,11 +379,20 @@ a {
 /*}*/
 /*------кнопка узнать больше-------*/
 #about {
-    padding: 6% 0;
-    text-align: center;
+    padding: 6% 15%;
+    text-align: justify;
+    text-indent: 1.5em;
 }
     #about h2 {
         padding-bottom: 1%;
+        text-align: center;
+    }
+    #about .right {
+        text-align: right;
+    }
+    #about .right img {
+        width: 3%;
+        margin-right: 1%;
     }
 #article .item_art {
     width: 200px;
