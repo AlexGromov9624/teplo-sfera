@@ -5,7 +5,7 @@
 body {
     font-size: 14px;
     font-family: one;
-    background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
+    background: linear-gradient(to top, rgb(216, 216, 216), #fff);
     color: #333;
     padding: 0 !important;
 }
@@ -338,7 +338,8 @@ a {
 #privileges {
     text-align: center;
     padding-top: 5%;
-    background-color: #231f20;
+    /*background-color: #231f20;*/
+    background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
 }
     #privileges .privilege > div {
         margin-bottom: 60px;
@@ -501,6 +502,24 @@ a {
     color: #f9ba48;
     background: #fff;
     border: 1px solid;
+}
+/*----------------gallery----------------*/
+#portfolio_block {
+    min-height: 200px;
+}
+/*----------------gallery----------------*/
+.our-work {
+    background: linear-gradient(to top, rgb(216, 216, 216), #fff);
+    height: 400px;
+}
+.block-panel-info {
+    background: linear-gradient(to top, rgb(216, 216, 216), #fff);
+/*linear-gradient(to top, rgb(194, 194, 194), #fff)*/
+}
+.ry{
+    padding: 10% 20%;
+    height: 40px;
+    background: linear-gradient(to top, rgb(216, 216, 216), #fff);
 }
 @media screen and (min-width: 768px) {
 

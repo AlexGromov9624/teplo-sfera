@@ -12,6 +12,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="fancybox-3.0/dist/jquery.fancybox.css">
 
     <title>Тепло-Сфера. Утепленное строительство домов. Напыление ППУ. Заливка ППУ.</title>
 </head>
@@ -103,6 +105,54 @@
     </div>
 </header>
 
+<div id="portfolio_block">
+    <!--<div class="wrapper"><h2>Портфолио</h2></div>-->
+    <div class="container">
+
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter=".nap_holod, .nap_ang, .nap_dom_v, .nap_dom_s, .zal_shel, .gid_kr">Все фото</span></li>
+            <li><span class="filter" data-filter=".nap_holod">Напыление холодильных камер</span></li>
+            <li><span class="filter" data-filter=".nap_ang">Напыление ангаров</span></li>
+            <li><span class="filter" data-filter=".nap_dom_v">Напыление дома изнутри</span></li>
+            <li><span class="filter" data-filter=".nap_dom_s">Напыление дома снаружи</span></li>
+            <li><span class="filter" data-filter=".zal_shel">Заливка щелей</span></li>
+            <li><span class="filter" data-filter=".gid_kr">Гидроизоляция крыш</span></li>
+        </ul>
+
+        <div id="portfoliolist">
+            <div class="portfolio nap_holod" data-cat="nap_holod">
+                <div class="portfolio-wrapper">
+                    <a data-exif="Exif #1" href="/img/photo/photo_gallery/slider_1.jpg" data-fancybox="images">
+                        <img src="img/photo/photo_gallery/slider_1.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio nap_ang float-none" data-cat="nap_ang">
+                <div class="portfolio-wrapper">
+                    <a data-exif="Exif #1" href="/img/photo/photo_gallery/_MG_9738.jpg" data-fancybox="images">
+                        <img src="img/photo/photo_gallery/_MG_9738.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio nap_dom_v" data-cat="nap_dom_v">
+                <div class="portfolio-wrapper">
+                    <a data-exif="Exif #1" href="/img/photo/photo_gallery/007n.jpg" data-fancybox="images">
+                        <img src="img/photo/photo_gallery/007n.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio zal_shel" data-cat="zal_shel">
+                <div class="portfolio-wrapper">
+                    <a data-exif="Exif #1" href="/img/photo/photo_gallery/007n.jpg" data-fancybox="images">
+                        <img src="img/photo/photo_gallery/007n.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+</div>
+
+
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left">
     <span class="glyphicon glyphicon-chevron-up"></span></a>
 
@@ -138,11 +188,41 @@
     </div>
 </footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="fancybox-3.0/dist/jquery.fancybox.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
 <script src="js/fix_menu.js"></script>
-
 <script src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+    $("[data-fancybox]").fancybox({
+        // Options will go here
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var filterList = {
+            init: function () {
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixItUp({
+                    selectors: {
+                        target: '.portfolio',
+                        filter: '.filter'
+                    },
+                    load: {
+                        filter: '.nap_holod'
+                    }
+                });
+            }
+        };
+        // Run the show!
+        filterList.init();
+    });
+</script>
 
 <script type="text/javascript">
     //кнопка вверх
