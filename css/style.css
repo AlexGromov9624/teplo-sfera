@@ -337,9 +337,10 @@ a {
     }
 #privileges {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 11%;
+    padding-bottom: 9%;
     /*background-color: #231f20;*/
-    background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);
+    /*background: linear-gradient(to top, rgba(189, 185, 178, 0.66), #fff);*/
 }
     #privileges .privilege > div {
         margin-bottom: 60px;
@@ -348,12 +349,12 @@ a {
         width: 100px;
     }
     #privileges .tit-priv {
-        color: #fe7e18;
+        color: #231f20;
         font-weight: 600;
         font-size: 20px;
     }
     #privileges .text-priv {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgb(35, 31, 32);
         line-height: 10px;
     }
 /*------кнопка узнать больше-------*/
@@ -510,7 +511,8 @@ a {
 /*----------------gallery----------------*/
 .our-work {
     background: linear-gradient(to top, rgb(216, 216, 216), #fff);
-    height: 400px;
+    height: 600px;
+    padding: 10%;
 }
 .block-panel-info {
     /*background: linear-gradient(to top, rgb(216, 216, 216), #fff);*/
@@ -519,8 +521,85 @@ a {
 .ry{
     padding: 10% 20%;
     height: 40px;
-    background: linear-gradient(to top, rgb(216, 216, 216), #fff);
+    /*background: linear-gradient(to top, rgb(216, 216, 216), #fff);*/
 }
+/*.rotate-sq1 {*/
+    /*-moz-transform: rotate(180deg); !* Для Firefox *!*/
+    /*-ms-transform: rotate(180deg); !* Для IE *!*/
+    /*-webkit-transform: rotate(180deg); !* Для Safari, Chrome, iOS *!*/
+    /*-o-transform: rotate(180deg); !* Для Opera *!*/
+    /*transform: rotate(180deg);*/
+/*}*/
+/*.rotate-sq2 {*/
+    /*-moz-transform: rotate(140deg); !* Для Firefox *!*/
+    /*-ms-transform: rotate(140deg); !* Для IE *!*/
+    /*-webkit-transform: rotate(140deg); !* Для Safari, Chrome, iOS *!*/
+    /*-o-transform: rotate(140deg); !* Для Opera *!*/
+    /*transform: rotate(140deg);*/
+/*}*/
+.rotate-diamond {
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+.turn-arrow {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    transform: rotate(-40deg);
+}
+.our-work h2 {
+    padding-bottom: 5%;
+    font-weight: 700;
+    text-align: center;
+}
+.our-work-blocks {
+    display:inline-block;
+    position:relative;
+}
+.our-work-blocks span {
+    display: inline-block;
+    position: absolute;
+    top: 84px;
+    left: 60px;
+    color: #e2e2e2;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+}
+.diamond-correct span {
+    top: 110px;
+}
+.order {
+    padding: 5% 10%;
+    text-align: center;
+}
+    .order h2 {
+        padding-bottom: 2%;
+    }
+    .order .form-decoration input {
+        padding: 10px;
+        width: 30%;
+        color: rgba(51, 51, 51, 0.91);
+        border: none;
+        margin-bottom: 1%;
+    }
+    .order .form-decoration button {
+        color: #fff;
+        padding: 8px;
+        background-color: #f9ba48;
+        font-size: 18px;
+        border: 2px solid #fff;
+        letter-spacing: 0.5px;
+    }
+    .order .form-decoration button:hover {
+        color: #f9ba48;
+        background-color: #fff;
+        border: 2px solid #f9ba48;
+        font-weight: 700;
+    }
 @media screen and (min-width: 768px) {
 
 }
