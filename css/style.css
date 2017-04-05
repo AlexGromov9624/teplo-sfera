@@ -73,6 +73,7 @@ a {
     color:#fff;
     text-decoration: none;
     font-weight: 700;
+    letter-spacing: 1.2px;
 }
 #menu li a:hover {
     color: #f9ba48;
@@ -86,7 +87,7 @@ a {
     height: 60px;
     margin-top: -60px;
 }
-#menu.block-menu-articles {
+#menu.block-menu-articles, #menu.block-menu-portfolio {
     margin-top: 0;
     background: rgb(35, 31, 32);
 }
@@ -519,7 +520,9 @@ a {
 }
 /*----------------gallery----------------*/
 #portfolio_block {
-    min-height: 200px;
+    min-height: 300px;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 /*----------------gallery----------------*/
 .our-work {
@@ -613,6 +616,9 @@ a {
         border: 2px solid #f9ba48;
         font-weight: 700;
     }
+.container {
+    width: 80% !important;
+}
 @media screen and (min-width: 768px) {
 
 }
