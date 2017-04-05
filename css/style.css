@@ -87,7 +87,7 @@ a {
     height: 60px;
     margin-top: -60px;
 }
-#menu.block-menu-articles, #menu.block-menu-portfolio {
+#menu.block-menu-articles, #menu.block-menu-portfolio, #menu.block-menu-service {
     margin-top: 0;
     background: rgb(35, 31, 32);
 }
@@ -448,16 +448,19 @@ a {
 }
 #services {
     min-height: 800px;
+    padding: 0 7% 0 7%;
 }
 .nav > li > a {
     padding: 17px 7px;
     color: #FF9800;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #231f20;
 }
 #myTab1 > li, #myTab2 > li, #myTab3 > li, #myTab6 > li {
-    padding: 10px 10px 0 37px;
+    padding: 10px 10px 0;
 }
 #myTab1, #myTab2, #myTab3, #myTab6 {
     border-right: 1px solid #ddd;
