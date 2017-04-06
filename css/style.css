@@ -375,7 +375,7 @@ a {
 .image-art {
     max-width: 50%;
     float:left;
-    margin: 50px 60px 10px 0;
+    margin: 2% 3% 1% 0;
 }
 #about {
     padding: 6% 15%;
@@ -419,7 +419,7 @@ a {
         margin-bottom: 10px;
         line-height: 14px;
     }
-    #article .block-info .text-art {
+    #article .block-info .text-article {
         color: #000;
         font-size: 12px;
         line-height: 13px;
@@ -647,6 +647,9 @@ a {
 }
 #services .tab-content .block-coast .free-coast span {
     color: #faa01b;
+}
+.text-serv, .text-art {
+    text-align: justify;
 }
 @media screen and (min-width: 768px) {
 
