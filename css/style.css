@@ -455,15 +455,24 @@ a {
     color: #FF9800;
     font-weight: 600;
     letter-spacing: 0.5px;
+    margin-right: 0;
+}
+.nav-tabs {
+    border-bottom: 1px solid rgb(226, 226, 226);
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #231f20;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(226, 226, 226);
+}
+.nav-tabs > li {
+    border-right: 1px solid rgb(226, 226, 226);
 }
 #myTab1 > li, #myTab2 > li, #myTab3 > li, #myTab6 > li {
     padding: 10px 10px 0;
 }
 #myTab1, #myTab2, #myTab3, #myTab6 {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid rgb(226, 226, 226);
 }
 #myTab1 > li > a, #myTab2 > li > a, #myTab3 > li > a, #myTab6 > li > a {
     text-decoration: none;
@@ -476,8 +485,14 @@ a {
     margin: 0 25px 15px 0px;
     float: left;
 }
-.text-serv {
-    margin-top: 20px;
+#services {
+    margin: 0;
+    padding-bottom: 3%;
+    overflow: hidden; /* clearfix */
+}
+#services:before {
+    content: "";
+    float: left;
 }
 .arrow-right {
     width: 4%;
@@ -621,6 +636,17 @@ a {
     }
 .container {
     width: 80% !important;
+}
+#services .tab-content .block-coast, #services .tab-content .block-coast .free-coast {
+    margin-top: 5%;
+}
+#services .tab-content .block-coast span {
+    color: #428dca;
+    font-weight: 700;
+    line-height: 25px;
+}
+#services .tab-content .block-coast .free-coast span {
+    color: #faa01b;
 }
 @media screen and (min-width: 768px) {
 
