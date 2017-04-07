@@ -652,6 +652,10 @@ a {
 .text-serv, .text-art {
     text-align: justify;
 }
+.page-contact {
+    min-height: 500px;
+    padding: 5% 0%;
+}
 @media screen and (max-width: 1199px) { /*md*/
     #menu .wrapper {
         padding: 0;

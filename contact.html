@@ -97,6 +97,68 @@
     </div>
 </header>
 
+<div class="page-contact">
+    <div class="wrapper">
+        <div class="col-md-6">
+            <h2>Как с нами связаться?</h2>
+            <div class="form-contact">
+                <p>Наш адрес: <span>Украина, Днепр ул.Филосовская,84 (паралельно улице Рабочей)</span></p>
+                <p>Почта: <span>teplosffera@gmail.com</span></p>
+                <p>Рабочее время: <span>пн-вс 9:00-18:00</span></p>
+                <p><span>Звонки принимаем в любой день недели и в любое время. Звоните или пишите, всегда будем рады ответить, проконсультировать!</span></p>
+                <p>Телефон: <span>067 777 77 77</span></p>
+            </div>
+            <h2>Мы в социальных сетях</h2>
+            <div class="row soc-contact">
+                <a href="#"><img src="img/vk.svg"></a>
+                <a href="#"><img src="img/fb.svg"></a>
+                <a href="#"><img src="img/goo.svg"></a>
+                <a href="#"><img src="img/tw.svg"></a>
+                <a href="#"><img src="img/od.svg"></a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Контактная форма</h2>
+            <div class="form-decoration">
+                <form class="application" action="application.php" method="POST" name=" application ">
+                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required />
+                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required />
+                    <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                    <button class="applicationButton" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h2>Помогите нам предлагать Вам качественную и полезную информацию</h2>
+            <div class="form-decoration">
+                <form class="application" action="application.php" method="POST" name=" application ">
+                    <label>Вы знали что такое ППУ до нашего сайта?</label>
+                    <input name="ppu_yes" type="radio" class="applicationRadio" required />
+                    <input name="ppu_no" type="radio" class="applicationRadio" required />
+                    <label>Вас устраивает цена на услуги?</label>
+                    <input name="coast_yes" type="radio" class="applicationRadio" required />
+                    <input name="coast_no" type="radio" class="applicationRadio" required />
+                    <label>Оцените наш сайт от 1 до 5</label>
+                    <label>1 </label>
+                    <input name="rat_one" type="radio" class="applicationRadio" required />
+                    <label>2 </label>
+                    <input name="rat-two" type="radio" class="applicationRadio" required />
+                    <label>3 </label>
+                    <input name="rat_three" type="radio" class="applicationRadio" required />
+                    <label>4 </label>
+                    <input name="rat-four" type="radio" class="applicationRadio" required />
+                    <label>5 </label>
+                    <input name="rat_five" type="radio" class="applicationRadio" required />
+                    <label>Если хотите, можете написать чем не понравился</label>
+                    <input name="text" type="text" class="applicationText" maxlength="100" placeholder="Введите текст" required />
+                    <button class="applicationButton" type="submit">Ответить</button>
+                </form>
+            </div>
+            <h2>Спасибо за время и внимание!</h2>
+        </div>
+    </div>
+</div>
+
 <footer id="contact" class="wrapper">
     <div class="row">
         <div class="col-md-6">
@@ -115,7 +177,7 @@
                 <a href="#"><img src="img/od.svg"></a>
             </div>
         </div>
-        <div id="order" class="col-md-6">
+        <div class="col-md-6">
             <h2>Контактная форма</h2>
             <div class="form-decoration">
                 <form class="application" action="application.php" method="POST" name=" application ">
