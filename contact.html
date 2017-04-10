@@ -46,41 +46,7 @@
             </div>
         </div>
     </div>
-
-    <div class="block-slider">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="img/slider_1.jpg" alt="slider1">
-                    <!--<div class="carousel-caption">-->
-                    <!--<h3>ППУ удерживает тепло внутри помещения на 100%</h3>-->
-                    <!--</div>-->
-                </div>
-                <div class="item">
-                    <img src="img/slider_1.jpg" alt="slider2">
-                    <!--<div class="carousel-caption">-->
-                    <!--<h3>Сократите затраты на обогрев в 2 раза</h3>-->
-                    <!--</div>-->
-                </div>
-                <div class="item">
-                    <img src="img/slider_1.jpg" alt="slider3">
-                    <!--<div class="carousel-caption">-->
-                    <!--<h3>100% гидроизоляция плоских крыш</h3>-->
-                    <!--</div>-->
-                </div>
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-    </div>
-
-    <div id="menu" class="block-menu default center">
+    <div id="menu" class="block-menu-contact default center">
         <div class="wrapper">
             <ul>
                 <li><div id="icon-logo"><img src="img/guarantee.svg"></div></li>
@@ -102,11 +68,11 @@
         <div class="col-md-6">
             <h2>Как с нами связаться?</h2>
             <div class="form-contact">
-                <p>Наш адрес: <span>Украина, Днепр ул.Филосовская,84 (паралельно улице Рабочей)</span></p>
-                <p>Почта: <span>teplosffera@gmail.com</span></p>
-                <p>Рабочее время: <span>пн-вс 9:00-18:00</span></p>
-                <p><span>Звонки принимаем в любой день недели и в любое время. Звоните или пишите, всегда будем рады ответить, проконсультировать!</span></p>
-                <p>Телефон: <span>067 777 77 77</span></p>
+                <p><b>Наш адрес:</b> Украина, Днепр ул.Филосовская,84 (паралельно ул.Рабочей)</p>
+                <p><b>Почта:</b> teplosffera@gmail.com</p>
+                <p><b>Рабочее время:</b> пн-вс 9:00-18:00</p>
+                <p class="little-let"><b>Звонки принимаем в любой день недели и в любое время. Звоните или пишите, всегда будем рады ответить, проконсультировать!</b></p>
+                <p><b>Телефон:</b> 067 777 77 77</p>
             </div>
             <h2>Мы в социальных сетях</h2>
             <div class="row soc-contact">
@@ -119,50 +85,46 @@
         </div>
         <div class="col-md-6">
             <h2>Контактная форма</h2>
-            <div class="form-decoration">
+            <div class="form-decoration contact-form">
                 <form class="application" action="application.php" method="POST" name=" application ">
-                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required />
-                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required />
+                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required /><br>
+                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required /><br>
                     <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
                     <button class="applicationButton" type="submit">Заказать</button>
                 </form>
             </div>
         </div>
-        <div class="col-md-12">
-            <h2>Помогите нам сделать для Вас сайт еще лучше</h2>
-            <div class="form-decoration center">
+        <div class="col-md-12 question-block">
+            <h2 class="center">Помогите нам сделать для Вас сайт еще лучше</h2>
+            <div class="form-decoration center question-form">
                 <form class="application" action="application.php" method="POST" name=" application ">
                     <div class="col-md-3">
-                        <p><b>Вы знали что такое ППУ до нашего сайта?</b><br>
-                            <input name="ppu" type="radio" class="applicationRadio" value="да"/>да<br>
-                            <input name="ppu" type="radio" class="applicationRadio" value="нет"/>нет<br>
-                        </p>
+                        <label>А Вы знали, что такое ППУ до нашего сайта?</label><br>
+                        <input name="ppu" type="radio" class="applicationRadio" value="да"/>да<br>
+                        <input name="ppu" type="radio" class="applicationRadio" value="нет"/>нет<br>
                     </div>
                     <div class="col-md-3">
-                        <p><b>Вас устраивает цена на услуги?</b><br>
-                            <input name="coast" type="radio" class="applicationRadio" value="да"/>да<br>
-                            <input name="coast" type="radio" class="applicationRadio" value="нет"/>нет<br>
-                        </p>
+                        <label>Вас устроила цена на услуги?</label><br>
+                        <input name="coast" type="radio" class="applicationRadio" value="да"/>да<br>
+                        <input name="coast" type="radio" class="applicationRadio" value="нет"/>нет<br>
                     </div>
                     <div class="col-md-3">
-                        <p><b>Оцените наш сайт</b><br>
-                            <input name="rat" type="radio" class="applicationRadio" value="1"/>1<br>
-                            <input name="rat" type="radio" class="applicationRadio" value="2"/>2<br>
-                            <input name="rat" type="radio" class="applicationRadio" value="3"/>3<br>
-                            <input name="rat" type="radio" class="applicationRadio" value="4"/>4<br>
-                            <input name="rat" type="radio" class="applicationRadio" value="5"/>5<br>
-                        </p>
+                        <label>Оцените наш сайт</label><br>
+                        <input name="rat" type="radio" class="applicationRadio" value="1"/>1<br>
+                        <input name="rat" type="radio" class="applicationRadio" value="2"/>2<br>
+                        <input name="rat" type="radio" class="applicationRadio" value="3"/>3<br>
+                        <input name="rat" type="radio" class="applicationRadio" value="4"/>4<br>
+                        <input name="rat" type="radio" class="applicationRadio" value="5"/>5<br>
                     </div>
                     <div class="col-md-3">
-                        <p><b>Здесь Вы можете написать чем сайт понравился или не понравился:</b>
-                            <input name="text" type="text" class="applicationText" maxlength="100" placeholder="Введите текст"/>
-                        </p>
+                        <label>Здесь Вы можете написать чем сайт понравился или не понравился:</label>
+                        <textarea name="text" class="applicationText" rows="6" placeholder="Введите текст"></textarea>
                     </div>
                     <div class="col-md-12 center"><button class="applicationButton" type="submit">Ответить</button></div>
                 </form>
             </div>
         </div>
-        <h2 class="col-md-12 center">Спасибо за время и внимание!</h2>
+        <h2 class="col-md-12 center thanks">Спасибо за время и внимание!</h2>
     </div>
 </div>
 
@@ -226,11 +188,11 @@
     });
 </script>
 
-<script type="text/javascript">
-    $('.carousel').carousel({
-        interval: 2000
-    })
-</script>
+<!--<script type="text/javascript">-->
+    <!--$('.carousel').carousel({-->
+        <!--interval: 2000-->
+    <!--})-->
+<!--</script>-->
 
 </body>
 </html>

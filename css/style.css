@@ -87,8 +87,10 @@ a {
     height: 60px;
     margin-top: -60px;
 }
-#menu.block-menu-articles, #menu.block-menu-portfolio, #menu.block-menu-service {
+#menu.block-menu-articles, #menu.block-menu-portfolio,
+#menu.block-menu-service, #menu.block-menu-prices, #menu.block-menu-contact, #menu.block-menu-about {
     margin-top: 0;
+    border-top: 1px solid #f9ba48;
     background: rgb(35, 31, 32);
 }
 #menu.fixed {
@@ -229,14 +231,14 @@ a {
     padding-top: 5%;
     padding-bottom: 4%;
 }
-    #contact .form-decoration input {
+    #contact .form-decoration input, .contact-form input {
         padding: 10px;
         width: 80%;
         color: rgba(51, 51, 51, 0.91);
         border: none;
         margin-bottom: 1%;
     }
-    #contact .form-decoration button {
+    #contact .form-decoration button, .contact-form button, .applicationButton {
         color: #fff;
         padding: 8px;
         background-color: #f9ba48;
@@ -244,21 +246,33 @@ a {
         border: 2px solid #fff;
         letter-spacing: 0.5px;
     }
-    #contact .form-decoration button:hover {
+    #contact .form-decoration button:hover, .contact-form button:hover, .applicationButton:hover {
         color: #f9ba48;
         background-color: #fff;
         font-weight: 700;
     }
     .soc-contact img {
         width: 35px;
-        margin: 10px 10px 0 0;
+        margin-right: 10px;
     }
     .soc-contact img:hover {
         opacity: 0.3;
     }
-    #contact h2 {
-        margin-bottom: 25px;
-    }
+.applicationButton {
+    background-color: #231f20;
+}
+.applicationButton:hover {
+    color: #231f20;
+}
+.page-contact h2, #contact h2, .form-contact, .soc-contact {
+    margin-bottom: 4%;
+}
+.page-contact .question-block h2 {
+    margin: 4% 0 2%;
+}
+.thanks {
+    margin-top: 5%;
+}
 /*------кнопка вверх на главную-------*/
 #back-to-top {
     background-color: #f9ba48;
@@ -653,12 +667,19 @@ a {
     text-align: justify;
 }
 .page-contact {
-    min-height: 500px;
-    padding: 5% 0%;
+    min-height: 900px;
+    padding: 7% 0 0;
 }
-.questions {
-    padding: 0;
+.little-let {
+    font-size: 11px;
+    font-style: italic;
 }
+.applicationText {
+    width: 100%;
+    padding: 3%;
+    border: none;
+}
+
 @media screen and (max-width: 1199px) { /*md*/
     #menu .wrapper {
         padding: 0;

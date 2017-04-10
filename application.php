@@ -19,7 +19,7 @@ $userrat = $_POST['rat'];
 $usertext = $_POST['text'];
 
 // Формирование заголовка письма
-$subject  = "Новое сообщение";
+$subject  = "Закакз услуги";
 $headers  = "From: " . strip_tags($usermail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
