@@ -129,33 +129,40 @@
             </div>
         </div>
         <div class="col-md-12">
-            <h2>Помогите нам предлагать Вам качественную и полезную информацию</h2>
-            <div class="form-decoration">
+            <h2>Помогите нам сделать для Вас сайт еще лучше</h2>
+            <div class="form-decoration center">
                 <form class="application" action="application.php" method="POST" name=" application ">
-                    <label>Вы знали что такое ППУ до нашего сайта?</label>
-                    <input name="ppu_yes" type="radio" class="applicationRadio" required />
-                    <input name="ppu_no" type="radio" class="applicationRadio" required />
-                    <label>Вас устраивает цена на услуги?</label>
-                    <input name="coast_yes" type="radio" class="applicationRadio" required />
-                    <input name="coast_no" type="radio" class="applicationRadio" required />
-                    <label>Оцените наш сайт от 1 до 5</label>
-                    <label>1 </label>
-                    <input name="rat_one" type="radio" class="applicationRadio" required />
-                    <label>2 </label>
-                    <input name="rat-two" type="radio" class="applicationRadio" required />
-                    <label>3 </label>
-                    <input name="rat_three" type="radio" class="applicationRadio" required />
-                    <label>4 </label>
-                    <input name="rat-four" type="radio" class="applicationRadio" required />
-                    <label>5 </label>
-                    <input name="rat_five" type="radio" class="applicationRadio" required />
-                    <label>Если хотите, можете написать чем не понравился</label>
-                    <input name="text" type="text" class="applicationText" maxlength="100" placeholder="Введите текст" required />
-                    <button class="applicationButton" type="submit">Ответить</button>
+                    <div class="col-md-3">
+                        <p><b>Вы знали что такое ППУ до нашего сайта?</b><br>
+                            <input name="ppu" type="radio" class="applicationRadio" value="да"/>да<br>
+                            <input name="ppu" type="radio" class="applicationRadio" value="нет"/>нет<br>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><b>Вас устраивает цена на услуги?</b><br>
+                            <input name="coast" type="radio" class="applicationRadio" value="да"/>да<br>
+                            <input name="coast" type="radio" class="applicationRadio" value="нет"/>нет<br>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><b>Оцените наш сайт</b><br>
+                            <input name="rat" type="radio" class="applicationRadio" value="1"/>1<br>
+                            <input name="rat" type="radio" class="applicationRadio" value="2"/>2<br>
+                            <input name="rat" type="radio" class="applicationRadio" value="3"/>3<br>
+                            <input name="rat" type="radio" class="applicationRadio" value="4"/>4<br>
+                            <input name="rat" type="radio" class="applicationRadio" value="5"/>5<br>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><b>Здесь Вы можете написать чем сайт понравился или не понравился:</b>
+                            <input name="text" type="text" class="applicationText" maxlength="100" placeholder="Введите текст"/>
+                        </p>
+                    </div>
+                    <div class="col-md-12 center"><button class="applicationButton" type="submit">Ответить</button></div>
                 </form>
             </div>
-            <h2>Спасибо за время и внимание!</h2>
         </div>
+        <h2 class="col-md-12 center">Спасибо за время и внимание!</h2>
     </div>
 </div>
 

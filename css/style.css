@@ -656,6 +656,9 @@ a {
     min-height: 500px;
     padding: 5% 0%;
 }
+.questions {
+    padding: 0;
+}
 @media screen and (max-width: 1199px) { /*md*/
     #menu .wrapper {
         padding: 0;

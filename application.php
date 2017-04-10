@@ -13,18 +13,10 @@ $sendto   = "teplosffera@gmail.com"; // почта, на которую буде
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-
-$userppu_yes = $_POST['ppu_yes']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userppu_no = $_POST['ppu_no']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$usercoast_yes = $_POST['coast_yes']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$usercoast_no = $_POST['coast_no']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userrat_one = $_POST['rat_one']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userrat_two = $_POST['rat_two']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userrat_three = $_POST['rat_three']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userrat_four = $_POST['rat_four']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$userrat_five = $_POST['rat_five']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$usertext = $_POST['text']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-
+$userppu = $_POST['ppu'];
+$usercoast = $_POST['coast'];
+$userrat = $_POST['rat'];
+$usertext = $_POST['text'];
 
 // Формирование заголовка письма
 $subject  = "Новое сообщение";
@@ -39,15 +31,10 @@ $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообще
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
-$msg .= "<p><strong>Вы знали что такое ППУ:</strong> ".$userppu_yes."</p>\r\n";
-$msg .= "<p><strong>Вы знали что такое ППУ:</strong> ".$userppu_no."</p>\r\n";
-$msg .= "<p><strong>Вас устраивает цена на услуги:</strong> ".$usercoast_yes."</p>\r\n";
-$msg .= "<p><strong>Вас устраивает цена на услуги:</strong> ".$usercoast_no."</p>\r\n";
-$msg .= "<p><strong>Оцнка сайта 1:</strong> ".$userrat_one."</p>\r\n";
-$msg .= "<p><strong>Оцнка сайта 2:</strong> ".$userrat_two."</p>\r\n";
-$msg .= "<p><strong>Оцнка сайта 3:</strong> ".$userrat_three."</p>\r\n";
-$msg .= "<p><strong>Оцнка сайта 4:</strong> ".$userrat_four."</p>\r\n";
-$msg .= "<p><strong>Оцнка сайта 5:</strong> ".$userrat_five."</p>\r\n";
+$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Опрос:</h2>\r\n";
+$msg .= "<p><strong>Вы знали что такое ППУ:</strong> ".$userppu."</p>\r\n";
+$msg .= "<p><strong>Вас устраивает цена на услуги:</strong> ".$usercoast."</p>\r\n";
+$msg .= "<p><strong>Оцнка сайта:</strong> ".$userrat."</p>\r\n";
 $msg .= "<p><strong>Замечание к сайту:</strong> ".$usertext."</p>\r\n";
 $msg .= "</body></html>";
 
