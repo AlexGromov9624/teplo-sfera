@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.teplo-sfera.com
+RewriteRule ^(.*)$ http://teplo-sfera.com/$1 [R=301,L]
+
+Options +FollowSymlinks
+#Запрещаем загрузку файлов с внешних сайтов
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?teplo-sfera.com [nc]
+RewriteCond %{HTTP_REFERER} !google\. [nc]
+RewriteCond %{HTTP_REFERER} !search\?q=cache [nc]
+RewriteCond %{HTTP_REFERER} !msn\. [nc]
+RewriteCond %{HTTP_REFERER} !yahoo\. [nc]
+RewriteCond %{REQUEST_URI} !^/stop\.png$
+RewriteRule .*.(gif|jpg|png)$ http://teplo-sfera.com/stop.png[nc]

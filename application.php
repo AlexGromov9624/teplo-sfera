@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <title>Создание формы обратной связи</title>
-<meta http-equiv="Refresh" content="4; URL=http://teplo-sfera.com">
+<meta http-equiv="Refresh" content="4; URL=http://teplo-sfera.com"/>
 </head>
 <body>
 
-<?php 
-
+<?php
 $sendto   = "teplosffera@gmail.com"; // почта, на которую будет приходить письмо teplosffera@gmail.com
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
@@ -44,7 +43,6 @@ if(@mail($sendto, $subject, $msg, $headers)) {
 } else {
 	echo "<center><img src='img/ne-otpravleno.png'></center>";
 }
-
 ?>
 
 </body>
