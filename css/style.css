@@ -838,4 +838,15 @@ a {
     .table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
         white-space: normal;
     }
+    #about {
+        padding: 6% 0%;
+        text-indent: initial;
+        text-align: center;
+    }
+    #about h2 {
+        padding: 3% 0 7%;
+    }
+    #menu li a {
+        padding: 5px 10px;
+    }
 }
