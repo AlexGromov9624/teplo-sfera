@@ -316,7 +316,7 @@ a {
     }
     #static .text_progress {
         background-color: rgba(255, 255, 255, 0.61);
-        padding: 50px 15px 15px;
+        padding: 3% 15px 15px;
     }
     .progress-bar-warning {
         background-color: #feab1d;
@@ -876,7 +876,7 @@ a {
     #article .wrapper {
         padding: 10% 0 3%;
     }
-    .article-page .page-article-info img {
+    .article-page .page-article-info img, #article .block-article img {
         max-width: 70%;
     }
     #article .item_art {
@@ -884,5 +884,82 @@ a {
     }
     .page-contact h2, .page-contact .question-block h2 {
         margin-top: 10%;
+    }
+    #menu.default {
+        height: 125px;
+        margin-top: 0;
+        padding-top: 1px;
+        background-color: rgba(19, 18, 18, 0.93);
+    }
+    #privileges img {
+        width: 60px;
+    }
+    #privileges .tit-priv {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 10px;
+    }
+    #privileges .text-priv {
+        font-size: 11px;
+        line-height: 12px;
+    }
+    #privileges .privilege > div {
+        margin-bottom: 15px;
+    }
+    .privilege .none-pad {
+        padding: 0;
+    }
+    .privilege .none-pad-r {
+        padding-right: 0;
+    }
+    #category {
+        background: linear-gradient(to bottom, #f9ba48, #231f20 30%);
+        height: 380px;
+    }
+    .block-cat-text {
+        padding: 0 4%;
+    }
+    #category .item_cat .title_cat h2 {
+        font-size: 11px;
+        padding-top: 28%;
+        height: 80px;
+    }
+    #category .item_cat {
+        height: 125px;
+    }
+    #category .category-block {
+        padding: 30px 0;
+    }
+    #static .text_progress {
+        padding: 3% 15px 15px;
+    }
+    #static {
+        height: 690px;
+    }
+    #static .progress_bar {
+        padding: 15px 0 0;
+    }
+    .order .form-decoration input {
+        width: 75%;
+    }
+    .line {
+        padding-top: 1.5%;
+    }
+    #article h2 {
+        padding-left: 4%;
+    }
+    .block-article {
+        min-height: 600px;
+    }
+    .category-block .col-xs-4 {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    #category .item_cat .title_cat {
+        padding: 6px 3px;
+    }
+    #menu.fixed {
+        padding: 0 0 12px;
+        margin-top: -9px;
     }
 }
