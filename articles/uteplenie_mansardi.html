@@ -86,7 +86,18 @@
 
 <footer id="contact" class="wrapper">
     <div class="row">
-        <div class="col-md-6">
+        <div id="order2" class="visible-xs">
+            <h2>Контактная форма</h2>
+            <div class="form-decoration">
+                <form class="application" action="application.php" method="POST" name=" application ">
+                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required/>
+                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required/>
+                    <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
+                    <button class="applicationButton" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
             <h2>Наши контакты</h2>
             <div class="form-contact">
                 <p>Адрес: <span>Украина, Днепр ул.Филосовская,84</span></p>
@@ -95,19 +106,19 @@
                 <p>Телефон: <span>067 777 77 77</span></p>
             </div>
             <div class="row soc-contact">
-                <a href="#"><img src="../img/vk.svg"></a>
-                <a href="#"><img src="../img/fb.svg"></a>
-                <a href="#"><img src="../img/goo.svg"></a>
-                <a href="#"><img src="../img/tw.svg"></a>
-                <a href="#"><img src="../img/od.svg"></a>
+                <a href="#"><img src="img/vk.svg"></a>
+                <a href="#"><img src="img/fb.svg"></a>
+                <a href="#"><img src="img/goo.svg"></a>
+                <a href="#"><img src="img/tw.svg"></a>
+                <a href="#"><img src="img/od.svg"></a>
             </div>
         </div>
-        <div id="order" class="col-md-6">
+        <div id="order" class="hidden-xs col-sm-6 col-md-6">
             <h2>Контактная форма</h2>
             <div class="form-decoration">
-                <form class="application" action="../application.php" method="POST" name=" application ">
-                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required />
-                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required />
+                <form class="application" action="application.php" method="POST" name=" application ">
+                    <input name="name" class="applicationName" maxlength="30" placeholder="Введите ваше имя" required/>
+                    <input name="email" type="email" class="applicationEmail" maxlength="70" placeholder="Введите ваш E-mail" required/>
                     <input name="telephone" type="Tel" class="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/><br>
                     <button class="applicationButton" type="submit">Заказать</button>
                 </form>
