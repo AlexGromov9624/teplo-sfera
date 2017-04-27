@@ -603,12 +603,12 @@ a {
     -o-transform: rotate(90deg); /* Для Opera */
     transform: rotate(90deg);
 }
-.turn-arrow {
-    position: absolute;
-    top: 120px;
-    left: 140px;
-    transform: rotate(-40deg);
-}
+/*.turn-arrow {*/
+    /*position: absolute;*/
+    /*top: 120px;*/
+    /*left: 140px;*/
+    /*transform: rotate(-40deg);*/
+/*}*/
 .block-diamond {
     position: relative;
     /*left: 90px;*/
@@ -626,8 +626,11 @@ a {
 .our-work-blocks .block-diamond img {
     max-width: 30%;
 }
-.our-work-blocks .turn-arrow img {
-    max-width: 50%;
+/*.our-work-blocks .turn-arrow img {*/
+    /*max-width: 50%;*/
+/*}*/
+.arrow-work {
+    padding-top: 10px;
 }
 .our-work-blocks .our-work-text {
     height: 85px;
@@ -635,10 +638,10 @@ a {
     font-size: 16px;
     font-weight: 700;
 }
-.our-work-blocks .correct {
-    height: 62px;
-    margin-top: 23px;
-}
+/*.our-work-blocks .correct {*/
+    /*height: 62px;*/
+    /*margin-top: 23px;*/
+/*}*/
 /*.our-work-blocks span {*/
     /*display: inline-block;*/
     /*position: absolute;*/
@@ -728,10 +731,10 @@ a {
     .our-work {
         height: 450px;
     }
-    .turn-arrow {
-        top: 90px;
-        left: 115px;
-    }
+    /*.turn-arrow {*/
+        /*top: 90px;*/
+        /*left: 115px;*/
+    /*}*/
     .block-cat-text {
         padding: 16% 5% 0;
     }
@@ -915,6 +918,8 @@ a {
     }
     #article .item_art {
         margin-bottom: 10px;
+        width: 130px;
+        height: 155px;
     }
     .page-contact h2, .page-contact .question-block h2 {
         margin-top: 10%;
@@ -1015,10 +1020,10 @@ a {
     .our-work-blocks .corr-heig {
         height: 60px;
     }
-    .our-work-blocks .correct {
-        height: 20px;
-        margin-top: 20px;
-    }
+    /*.our-work-blocks .correct {*/
+        /*height: 20px;*/
+        /*margin-top: 20px;*/
+    /*}*/
     .our-work-blocks .block-diamond img {
         max-width: 15%;
     }
@@ -1047,8 +1052,17 @@ a {
     background: #f9ba48;
     transition: width .3s;
 }
-
 .cool-link:hover::after {
     width: 100%;
     transition: width .3s;
 }
+#menu li:hover {
+    border-bottom: 2px solid #f9ba48;
+    padding-bottom: 4px;
+}
+/*.our-work-blocks .corr-pad {*/
+    /*padding-top: 3%;*/
+/*}*/
+/*.our-work-blocks {*/
+    /*border: 1px solid;*/
+/*}*/
