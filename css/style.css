@@ -412,20 +412,24 @@ a {
         margin-right: 1%;
     }
 #article .item_art {
-    width: 200px;
+    width: 150px;
     position: relative;
-    height: 200px;
+    height: 150px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: 20px;
+    border-radius: 1000px;
+    background-color: #e5e4e4;
+    text-align: center;
 }
     #article .item_art img {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 100%;
+        width: 60%;
+        margin-top: 18%;
     }
     #article .block-info {
         width: 200px;
@@ -540,6 +544,7 @@ a {
 }
 .article-page .art {
     margin-bottom: 3%;
+    padding-left: 10px;
 }
 .dload-price {
     text-align: center;
@@ -810,7 +815,7 @@ a {
     }
     #article .item_art {
         width: 160px;
-        height: 185px;
+        height: 160px;
     }
     #article .wrapper {
         padding: 10% 0 3% 6%;
@@ -919,7 +924,7 @@ a {
     #article .item_art {
         margin-bottom: 10px;
         width: 130px;
-        height: 155px;
+        height: 130px;
     }
     .page-contact h2, .page-contact .question-block h2 {
         margin-top: 10%;
