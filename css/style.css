@@ -1084,5 +1084,8 @@ ul.akkordeon li > p {
 
 ul.akkordeon li > div{
     display: none;
+}
 
+.carousel-inner {
+    height: 550px;
 }
