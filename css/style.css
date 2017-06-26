@@ -507,7 +507,7 @@ a {
     /*color: #FF9800;*/
 /*}*/
 .photo-serv {
-    margin: 4% 25px 15px 0;
+    padding: 4% 25px 15px 0;
     float: left;
 }
 #services {
@@ -614,9 +614,10 @@ a {
     /*transform: rotate(-40deg);*/
 /*}*/
 .block-diamond {
-    position: relative;
+    /*position: relative;*/
     /*left: 90px;*/
-    left: 37%;
+    /*left: 37%;*/
+    text-align: center;
 }
 .our-work h2 {
     padding-bottom: 5%;
@@ -659,6 +660,9 @@ a {
 /*.diamond-correct span {*/
     /*top: 110px;*/
 /*}*/
+.carousel-inner {
+    height: 550px;
+}
 .order {
     padding: 5% 10%;
     text-align: center;
@@ -1015,7 +1019,8 @@ a {
         font-size: 12px;
     }
     .block-diamond {
-        left: 42%;
+        /*left: 42%;*/
+        text-align: center;
     }
     .our-work-blocks .our-work-text {
         font-size: 14px;
@@ -1046,6 +1051,9 @@ a {
     .line {
         padding-top: 0;
         height: 50px;
+    }
+    .carousel-inner {
+        height: 132px;
     }
 }
 .cool-link::after {
@@ -1084,11 +1092,6 @@ ul.akkordeon li > p {
 ul.akkordeon li > div{
     display: none;
 }
-
-.carousel-inner {
-    height: 550px;
-}
-
 .list-group {
     /*list-style-image: url("../img/dot.svg");*/
     list-style-image: linear-gradient(#faa01b 100%, #000 0%);
@@ -1098,15 +1101,12 @@ ul.akkordeon li > div{
     padding-left: 1%;
 }
 .photo-serv div {
-    padding: 1%;
-    width: 60%;
-    position: relative;
-    height: 50%;
-    -moz-box-sizing: border-box;
-    /* -webkit-box-sizing: border-box; */
-    box-sizing: border-box;
-    overflow: hidden;
+    display: inline-block;
 }
 .photo-serv img {
-    width: 50%;
+    width: 260px;
+    height: 155px;
+}
+.text-serv p {
+    text-indent: 0.5em;
 }
