@@ -1114,6 +1114,6 @@ ul.akkordeon li > div{
     width: 260px;
     height: 155px;
 }
-.text-serv p {
+.text-serv p, .text-art p {
     text-indent: 0.5em;
 }
